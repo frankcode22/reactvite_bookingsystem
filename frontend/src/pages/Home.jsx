@@ -53,99 +53,19 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           {/* Hero Section with Image Carousel */}
-          <div className="w-full h-screen ">
-            <Carousel slide={true} indicators={false}>
-              <div
-                className="w-full h-screen bg-cover bg-center"
-                style={{ backgroundImage: `url(${image1})` }}
-              >
-                <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <h1 className="text-5xl font-bold mb-4">
-                      Experience the Height of Luxury
-                    </h1>
-                    <p className="text-lg mb-6">
-                      Indulge in unparalleled comfort and world-class service,
-                      where every detail is designed for your ultimate
-                      relaxation.
-                    </p>
-                    <center>
-                      <ScrollLink to="rooms" smooth={true} duration={1000}>
-                        {" "}
-                        {/* Smooth scrolling link */}
-                        <Button className="bg-customBlue" size="lg">
-                          See Our Rooms
-                        </Button>
-                      </ScrollLink>
-                    </center>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="w-full h-screen bg-cover bg-center"
-                style={{ backgroundImage: `url(${image2})` }}
-              >
-                <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <h1 className="text-5xl font-bold mb-4">
-                      Your Sanctuary Awaits
-                    </h1>
-                    <p className="text-lg mb-6">
-                      Escape to elegance and serenity in our exclusive rooms and
-                      suites, crafted to provide an unforgettable stay.
-                    </p>
-                    <center>
-                      <ScrollLink to="rooms" smooth={true} duration={1000}>
-                        {" "}
-                        {/* Smooth scrolling link */}
-                        <Button className="bg-customBlue" size="lg">
-                          See Our Rooms
-                        </Button>
-                      </ScrollLink>
-                    </center>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="w-full h-screen bg-cover bg-center"
-                style={{ backgroundImage: `url(${image3})` }}
-              >
-                <div className="bg-black bg-opacity-50 h-full flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <h1 className="text-5xl font-bold mb-4">
-                      Unwind in Pure Luxury
-                    </h1>
-                    <p className="text-lg mb-6">
-                      Pamper yourself with lavish accommodations, gourmet
-                      dining, and spa treatments tailored for ultimate
-                      rejuvenation.
-                    </p>
-                    <center>
-                      <ScrollLink to="rooms" smooth={true} duration={1000}>
-                        {" "}
-                        {/* Smooth scrolling link */}
-                        <Button className="bg-customBlue" size="lg">
-                          See Our Rooms
-                        </Button>
-                      </ScrollLink>
-                    </center>
-                  </div>
-                </div>
-              </div>
-            </Carousel>
-          </div>
+          
 
           {/* Rooms section */}
           <section className="py-16 bg-gray-100" id="rooms">
             <div className="container mx-auto px-4">
               <h2 className="text-4xl font-bold text-center mb-4">
-                Rooms & Suites
+               Accommondation Available in Different Units for Booking
               </h2>
-              <p className="text-center text-lg text-gray-600 mb-12">
+              {/* <p className="text-center text-lg text-gray-600 mb-12">
                 Our luxurious rooms and suites are designed to provide the
                 ultimate comfort and relaxation, with every detail carefully
                 considered to ensure a truly unforgettable stay.
-              </p>
+              </p> */}
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {fetchLoding ? (
@@ -316,11 +236,11 @@ export default function Home() {
                   </Link>
 
                   <div className="w-96">
-                    <p className="text-gray-600 mt-4 ">
+                    {/* <p className="text-gray-600 mt-4 ">
                       Salford & Co.™ is a luxury hotel that provides the
                       ultimate comfort and relaxation, with every detail
                       designed for your ultimate relaxation.
-                    </p>
+                    </p> */}
                   </div>
                 </div>
 
