@@ -38,7 +38,7 @@ export default function DashRoomCategorys() {
 
   const [formData, setFormData] = useState({
     category_name: "",
-    price: "",
+    price: "0",
     description: "",
     image: null,
   });
@@ -150,7 +150,7 @@ export default function DashRoomCategorys() {
         fetchRoomCategory();
         setFormData({
           category_name: "",
-          price: "",
+          price: "0",
           description: "",
           image: null,
         });
@@ -442,7 +442,7 @@ export default function DashRoomCategorys() {
                   />
                 </div>
 
-                <div>
+                {/* <div>
                   <div className="mb-2 block">
                     <Label value="Price" />
                   </div>
@@ -455,7 +455,7 @@ export default function DashRoomCategorys() {
                     onChange={handleChange}
                     value={formData.price}
                   />
-                </div>
+                </div> */}
 
                 <div>
                   <div className="mb-2 block">

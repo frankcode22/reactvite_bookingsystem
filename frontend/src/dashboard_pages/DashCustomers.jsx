@@ -236,7 +236,7 @@ export default function DashCustomers() {
             size="md"
           >
             <Modal.Header>
-              <h1 className="text-xl font-semibold">Edit Customer Details</h1>
+              <h1 className="text-xl font-semibold">Edit Student Details</h1>
             </Modal.Header>
 
             <Modal.Body>
@@ -309,14 +309,14 @@ export default function DashCustomers() {
           </Modal>
 
           <h1 className="mt-3 mb-3 text-left font-semibold text-xl">
-            All Customers
+            All Students
           </h1>
 
           <div className="flex p-3 flex-col md:flex-row gap-8 justify-between">
             {/* left side */}
             <div className="flex-[3]">
               <h1 className="mt-3 mb-3 text-left font-semibold text-xl">
-                Customers Form
+                Add Student
               </h1>
               {showAlert && (
                 <Alert
@@ -329,14 +329,45 @@ export default function DashCustomers() {
                 </Alert>
               )}
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <div>
+                 <div>
                   <div className="mb-2 block">
-                    <Label value="Customer Name" />
+                    <Label value="Select Rank" />
                   </div>
                   <TextInput
                     id="p_name"
                     type="text"
-                    placeholder="Nimali Ireshika"
+                    placeholder="CPL"
+                    required
+                    shadow
+                    onChange={handleChange}
+                    defaultValue={formData.p_name}
+                  />
+                </div>
+
+                 <div>
+                  <div className="mb-2 block">
+                    <Label value="Service No" />
+                  </div>
+                  <TextInput
+                    id="p_name"
+                    type="text"
+                    placeholder="92344"
+                    required
+                    shadow
+                    onChange={handleChange}
+                    defaultValue={formData.p_name}
+                  />
+                </div>
+
+
+                <div>
+                  <div className="mb-2 block">
+                    <Label value="Name" />
+                  </div>
+                  <TextInput
+                    id="p_name"
+                    type="text"
+                    placeholder="Makena"
                     required
                     shadow
                     onChange={handleChange}
@@ -346,12 +377,12 @@ export default function DashCustomers() {
 
                 <div>
                   <div className="mb-2 block">
-                    <Label value="Customer Email" />
+                    <Label value="Email" />
                   </div>
                   <TextInput
                     id="p_email"
                     type="email"
-                    placeholder="nimalihe@gmail.com"
+                    placeholder="makena@gmail.com"
                     required
                     shadow
                     onChange={handleChange}
@@ -386,7 +417,7 @@ export default function DashCustomers() {
                         <span className="pl-3">Loading...</span>
                       </>
                     ) : (
-                      "Create New Customer"
+                      "Add New Student"
                     )}
                   </Button>
                 </div>
@@ -405,8 +436,8 @@ export default function DashCustomers() {
                     <>
                       <Table hoverable className="shadow-md w-full">
                         <TableHead>
-                          <TableHeadCell>Customer Name</TableHeadCell>
-                          <TableHeadCell>Customer Email</TableHeadCell>
+                          <TableHeadCell> Name</TableHeadCell>
+                          <TableHeadCell> Email</TableHeadCell>
                           <TableHeadCell>Contact Number</TableHeadCell>
 
                           <TableHeadCell>

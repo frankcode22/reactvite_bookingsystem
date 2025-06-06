@@ -268,8 +268,8 @@ export default function Booking() {
                   <div className="flex items-center mb-4">
                     <BsMailbox className="text-2xl mr-4" />
                     <span className="text-lg">
-                      <a href="mailto:info@salford.com" className="text-white">
-                        info@salford.com
+                      <a href="mailto:info@Kdf Accommondation Booking.com" className="text-white">
+                        info@Kdf Accommondation Booking.com
                       </a>
                     </span>
                   </div>
@@ -294,7 +294,7 @@ export default function Booking() {
                   </Link>
                   <div className="w-96">
                     <p className="text-gray-600 mt-4 ">
-                      Salford & Co.™ is a luxury hotel that provides the
+                      Kdf Accommondation Booking & Co.™ is a luxury hotel that provides the
                       ultimate comfort and relaxation, with every detail
                       designed for your ultimate relaxation.
                     </p>
@@ -328,7 +328,7 @@ export default function Booking() {
               </div>
               <Footer.Divider />
               <div className="w-full sm:flex sm:items-center sm:justify-between">
-                <Footer.Copyright href="#" by="Salford & Co.™" year={2024} />
+                <Footer.Copyright href="#" by="Kdf Accommondation Booking & Co.™" year={2024} />
                 <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
                   <Footer.Icon href="#" icon={BsFacebook} />
                   <Footer.Icon href="#" icon={BsInstagram} />

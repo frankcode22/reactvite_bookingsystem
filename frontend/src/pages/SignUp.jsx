@@ -50,7 +50,7 @@ export default function SignUp() {
             <img src={logo} alt="" className="w-72" />
           </Link>
           <p className="text-sm mt-5">
-            <b>Salford & Co</b> is a luxury business hotel, offering top-tier
+            <b>Kdf Accommondation Booking & Co</b> is a luxury business hotel, offering top-tier
             comfort, modern amenities, and tailored services for the busy
             professional. Experience effortless stays designed for success.
           </p>

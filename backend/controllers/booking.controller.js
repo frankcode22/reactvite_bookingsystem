@@ -127,24 +127,43 @@ function getPendingBookingDetails(req, res) {
 }
 
 // Get checked-in booking details using stored procedure
+// function getCheckedInBookingDetails(req, res) {
+//   try {
+//     models.sequelize
+//       .query("SELECT * FROM GetCheckInBookingDetails")
+//       .then((result) => {
+//         res.status(200).json({
+//           success: true,
+//           message: "Checked-in booking data fetched successfully",
+//           data: result[0],
+//         });
+//       });
+//   } catch (error) {
+//     res.status(400).json({
+//       success: false,
+//       message: error.message,
+//     });
+//   }
+// }
+
 function getCheckedInBookingDetails(req, res) {
-  try {
-    models.sequelize
-      .query("SELECT * FROM GetCheckInBookingDetails")
-      .then((result) => {
-        res.status(200).json({
-          success: true,
-          message: "Checked-in booking data fetched successfully",
-          data: result[0],
-        });
+  models.sequelize
+    .query("SELECT * FROM GetCheckInBookingDetails")
+    .then(([results]) => {
+      res.status(200).json({
+        success: true,
+        message: "Checked-in booking data fetched successfully",
+        data: results,
       });
-  } catch (error) {
-    res.status(400).json({
-      success: false,
-      message: error.message,
+    })
+    .catch((error) => {
+      res.status(400).json({
+        success: false,
+        message: error.message,
+      });
     });
-  }
 }
+
 
 // Create a new booking using stored procedure
 // function createBooking(req, res) {

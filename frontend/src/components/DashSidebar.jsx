@@ -110,7 +110,7 @@ export default function DashSidebar() {
               icon={FaSignInAlt}
               as="div"
             >
-              Check In
+              Course Check In
             </Sidebar.Item>
           </Link>
 
@@ -126,7 +126,7 @@ export default function DashSidebar() {
 
           <Link to="/dashboard?tab=customers">
             <Sidebar.Item active={tab === "customers"} icon={IoIosMan} as="div">
-              Customers
+              Students
             </Sidebar.Item>
           </Link>
 

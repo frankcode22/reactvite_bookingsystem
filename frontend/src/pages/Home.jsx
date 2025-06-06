@@ -102,47 +102,7 @@ export default function Home() {
           </section>
 
           {/* Call to Action */}
-          <section className="bg-customBlue text-white py-16">
-            <div className="container mx-auto px-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
-                <div>
-                  <h2 className="text-4xl font-bold mb-4">
-                    Book Your Stay Now
-                  </h2>
-                  <p className="text-lg mb-6">
-                    Experience the height of luxury with our exclusive rooms and
-                    suites, designed to provide the ultimate comfort and
-                    relaxation.
-                  </p>
-
-                  {/* Phone number */}
-                  <div className="flex items-center mb-4">
-                    <BsPhone className="text-2xl mr-4" />
-                    <span className="text-lg">+1 (123) 456-7890</span>
-                  </div>
-
-                  {/* Email */}
-
-                  <div className="flex items-center mb-4">
-                    <BsMailbox className="text-2xl mr-4" />
-                    <span className="text-lg">
-                      <a href="mailto:" className="text-white">
-                        info@salford.com
-                      </a>
-                    </span>
-                  </div>
-
-                  <Button className="bg-white text-customBlue mt-10">
-                    Book Now
-                  </Button>
-                </div>
-                <div className="hidden md:block">
-                  <img src={image1} alt="" className="rounded-lg" width={500} />
-                </div>
-              </div>
-            </div>
-          </section>
-
+        
           {/* Testimonials */}
           <section className="py-16">
             <div className="container mx-auto px-4">
@@ -151,7 +111,7 @@ export default function Home() {
               </h2>
               <p className="text-center text-lg text-gray-600 mb-12">
                 Our guests love us! Here's what they have to say about their
-                stay at Salford & Co.™
+                stay at Kdf Accommondation Booking & Co.™
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -168,7 +128,7 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="text-gray-600 mb-6">
-                    "Staying at Salford & Co. was an unforgettable experience!
+                    "Staying at Kdf Accommondation Booking & Co. was an unforgettable experience!
                     The service was exceptional, and the ambiance felt like
                     home."
                   </p>
@@ -237,7 +197,7 @@ export default function Home() {
 
                   <div className="w-96">
                     {/* <p className="text-gray-600 mt-4 ">
-                      Salford & Co.™ is a luxury hotel that provides the
+                      Kdf Accommondation Booking & Co.™ is a luxury hotel that provides the
                       ultimate comfort and relaxation, with every detail
                       designed for your ultimate relaxation.
                     </p> */}
@@ -272,7 +232,7 @@ export default function Home() {
               </div>
               <Footer.Divider />
               <div className="w-full sm:flex sm:items-center sm:justify-between">
-                <Footer.Copyright href="#" by="Salford & Co.™" year={2024} />
+                <Footer.Copyright href="#" by="Kdf Accommondation Booking & Co.™" year={2024} />
                 <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
                   <Footer.Icon href="#" icon={BsFacebook} />
                   <Footer.Icon href="#" icon={BsInstagram} />
